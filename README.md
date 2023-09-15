@@ -16,7 +16,7 @@ dl.get("10-K", "0000796343", download_details=True)
 dl.get("10-Q", "0000796343", download_details=True)
 ```
 
-### Using powershell, copy all files to a single folder since the file names are the same - each file is appened with a random number
+### Using PowerShell, copy all files to a single folder since the file names are the same - each file is appened with a random number
 
 ```
 (Get-ChildItem . -Filter '*.html' -Recurse).FullName | % { Rename-Item -Path $_ -NewName  $_.Insert( $_.Length - 5, "_$(Get-Random)") }
