@@ -1,7 +1,7 @@
 # adbe_fillings
 
 
-### Using python, download SEC fillings using python
+### Using python, download SEC fillings
 
 ```
 pip install -U sec-edgar-downloader
